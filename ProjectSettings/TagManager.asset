@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - enemy
-  - op
+  - Trap
+  - Convert_Bl
+  - JumpTrap
+  - Reverse Gravity
   layers:
   - Default
   - TransparentFX
@@ -13,9 +15,9 @@ TagManager:
   - 
   - Water
   - UI
-  - groundLayer
-  - bounceLayer
-  - enemy
+  - player
+  - ground
+  - Trap
   - 
   - 
   - 
@@ -40,21 +42,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back ground
+    uniqueID: 2452276203
+    locked: 0
+  - name: Terrain
+    uniqueID: 1919016227
+    locked: 0
   - name: player
-    uniqueID: 1027578505
-    locked: 0
-  - name: background
-    uniqueID: 4268397045
-    locked: 0
-  - name: mainlayer
-    uniqueID: 407253835
+    uniqueID: 3226142291
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: boss
-    uniqueID: 3970885247
-    locked: 0
-  - name: foreground
-    uniqueID: 1426148417
     locked: 0
