@@ -5,7 +5,7 @@ using UnityEngine;
 public class collision : MonoBehaviour
 {  
     [SerializeField] Animator anim;
-    [SerializeField] movement playerMovement;
+    movement playerMovement;
     [SerializeField] SpriteRenderer bossWolfArm;
     float countHurtTime=0f;
     void Start()

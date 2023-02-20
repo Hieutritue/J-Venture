@@ -8,6 +8,8 @@ TagManager:
   - Convert_Bl
   - JumpTrap
   - Reverse Gravity
+  - enemy
+  - background
   layers:
   - Default
   - TransparentFX
@@ -18,8 +20,8 @@ TagManager:
   - player
   - ground
   - Trap
-  - 
-  - 
+  - bounceLayer
+  - enemyLayer
   - 
   - 
   - 
@@ -53,4 +55,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: foreground
+    uniqueID: 2527829317
     locked: 0

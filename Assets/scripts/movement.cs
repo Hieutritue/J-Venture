@@ -4,7 +4,6 @@ public class movement : MonoBehaviour
 {
     private float horizontal;
     [SerializeField] private float speed = 3f;
-    float parryForce=8f;
     [SerializeField] private float jumpingPower = 8f;
     private bool isFacingRight = true;
     [SerializeField] Animator anim;
@@ -44,7 +43,7 @@ public class movement : MonoBehaviour
             Jump();
         }
         if(!IsGrounded())  {anim.SetBool("jumping",true);}
-        if(IsGrounded()) {anim.SetBool("jumping",false);anim.SetBool("parrying",false);}
+        if(IsGrounded()) {anim.SetBool("jumping",false);}
         
 
         Flip();
