@@ -5,7 +5,7 @@ public class movement : MonoBehaviour
     private float horizontal;
     [SerializeField] private float speed = 3f;
     float parryForce=8f;
-    [SerializeField] private float jumpingPower = 6f;
+    [SerializeField] private float jumpingPower = 8f;
     private bool isFacingRight = true;
     [SerializeField] Animator anim;
     [SerializeField] private Rigidbody2D rb;
@@ -15,10 +15,18 @@ public class movement : MonoBehaviour
     [SerializeField] LayerMask bounceLayer;
     [SerializeField] LayerMask enemyLayer;
     
-    void Start()
+  private void OnCollisionEnter2D(Collision2D collision)
     {
-     
+        if (collision.gameObject.CompareTag("JumpTrap"))
+        {
+            jumpingPower = 20f;
+        }
+        if (collision.gameObject.CompareTag("Untagged"))
+        {
+            jumpingPower = 8f;
+        }
     }
+    
     void Update()
     {   
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -47,7 +55,14 @@ public class movement : MonoBehaviour
     }
     public void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        if (rb.gravityScale > 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        }
+        if(rb.gravityScale < 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, -jumpingPower);
+        }
     }
     private void FixedUpdate()
     {
