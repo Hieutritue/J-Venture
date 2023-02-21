@@ -8,9 +8,11 @@ public class GameController : MonoBehaviour
   [SerializeField] Animator anim;
     movement playerMovement;
     float countHurtTime=0f;
+    Rigidbody2D rb;
     void Start()
     {   
         playerMovement=gameObject.GetComponent<movement>();
+        rb=gameObject.GetComponent<Rigidbody2D>();
     }
 
 
@@ -34,10 +36,27 @@ public class GameController : MonoBehaviour
         
         // MINI GAME SECTION********************************************
 
-        else if(collision.gameObject.CompareTag("Trap")){
+        if(collision.gameObject.CompareTag("Trap")){
                 RestartLevel();
             Debug.Log("huhuhuhu");
         }
+
+          // CONVERT GRAVITY************************************
+        if (collision.gameObject.CompareTag("Convert_Bl"))
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y+3);
+            transform.rotation = Quaternion.Euler(transform.rotation.x +180,0,0);
+            rb.velocity = new Vector2(rb.velocity.x,0);
+            rb.gravityScale = -rb.gravityScale;
+        }
+        if (collision.gameObject.CompareTag("Reverse Gravity"))
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y - 3);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            rb.gravityScale = -rb.gravityScale;
+        }
+          //END CONVERT GRAVITY********************************
         // END MINI GAME
     }
      void RestartLevel()

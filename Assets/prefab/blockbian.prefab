@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6354430893670265393}
   - component: {fileID: 6354430893670265398}
   m_Layer: 0
-  m_Name: CvGravity
+  m_Name: blockbian
   m_TagString: Convert_Bl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
