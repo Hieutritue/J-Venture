@@ -211,24 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &129815929 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4659665815924088820, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
-  m_PrefabInstance: {fileID: 291986725}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &129815930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129815929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0bca5d4c71453346b30397c1fd6bb26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 1023954457}
 --- !u!4 &129815935 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
@@ -249,6 +231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: main
       objectReference: {fileID: 0}
+    - target: {fileID: 4729336243073685753, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1023954457}
     - target: {fileID: 5248160920060060057, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: speed
       value: 5

@@ -1030,13 +1030,25 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  parry: 0
   bounceLayer:
     serializedVersion: 2
     m_Bits: 512
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &4729336243073685753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4659665815924088820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0bca5d4c71453346b30397c1fd6bb26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!4 &5792311419146127255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: cb20110af36949a4a875c729f9bfe62e, type: 3}
