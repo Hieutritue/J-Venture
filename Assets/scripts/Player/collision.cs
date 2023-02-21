@@ -12,6 +12,8 @@ public class collision : MonoBehaviour
     {   
         playerMovement=gameObject.GetComponent<movement>();
     }
+
+// BOSS SECTION*************************************************
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("enemy"))
@@ -27,5 +29,6 @@ public class collision : MonoBehaviour
             Debug.Log(countHurtTime);
            }
     }
- 
+// END OF BOSS************************************************** 
+
 }
