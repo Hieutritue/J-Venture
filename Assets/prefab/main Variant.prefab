@@ -76,7 +76,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: cb20110af36949a4a875c729f9bfe62e, type: 3}
       propertyPath: m_Name
-      value: main
+      value: main Variant
       objectReference: {fileID: 0}
     - target: {fileID: -8599309380163242023, guid: cb20110af36949a4a875c729f9bfe62e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -871,19 +871,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5706897812524601722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2906823c1290cde498ebc53df78c5d1a, type: 3}
+  m_Script: {fileID: 11500000, guid: dc6fee914fdfa204d888118fd058ca48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
+  jumpingPower: 8
   anim: {fileID: 581488438}
   rb: {fileID: 581488441}
   groundCheck: {fileID: 48276989}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
-  parry: 32
+    m_Bits: 128
+  parry: 0
   bounceLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 512
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!4 &6916087044455319833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: cb20110af36949a4a875c729f9bfe62e, type: 3}

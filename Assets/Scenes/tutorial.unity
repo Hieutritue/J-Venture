@@ -483,7 +483,6 @@ GameObject:
   - component: {fileID: 571966034}
   - component: {fileID: 571966036}
   - component: {fileID: 571966038}
-  - component: {fileID: 571966037}
   m_Layer: 9
   m_Name: tireq
   m_TagString: Untagged
@@ -584,19 +583,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5971951, y: 1.1151221}
   m_EdgeRadius: 0
---- !u!114 &571966037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571966033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72a2ff5b9161be14f84d54282bec15bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
 --- !u!95 &571966038
 Animator:
   serializedVersion: 5
@@ -2404,6 +2390,14 @@ PrefabInstance:
     - target: {fileID: 2013820401748067338, guid: 0baa3689418fc64458858d799b9d9947, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013820401748067339, guid: 0baa3689418fc64458858d799b9d9947, type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013820401748067339, guid: 0baa3689418fc64458858d799b9d9947, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1842691093
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0baa3689418fc64458858d799b9d9947, type: 3}
