@@ -3836,7 +3836,7 @@ MonoBehaviour:
     m_Bits: 512
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!1 &1182779551
 GameObject:
   m_ObjectHideFlags: 0
