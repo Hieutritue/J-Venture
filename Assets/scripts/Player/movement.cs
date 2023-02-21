@@ -10,7 +10,6 @@ public class movement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] KeyCode parry;
     [SerializeField] LayerMask bounceLayer;
     [SerializeField] LayerMask enemyLayer;
     
