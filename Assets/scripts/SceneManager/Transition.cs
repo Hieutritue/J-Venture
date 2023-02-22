@@ -27,7 +27,9 @@ public class Transition : MonoBehaviour
         Debug.Log("abc");
         CheckpointManager.SetCheckpoint(GameObject.FindGameObjectWithTag("Player").transform.position);
         anim.SetTrigger("triggertransition");
-        yield return new WaitForSeconds(transitionDelay);
+       
+        yield return new WaitForSeconds(transitionDelay); // cho mot chut roi moi chay transition
+        
         SceneManager.LoadScene(index);
     }
 }
