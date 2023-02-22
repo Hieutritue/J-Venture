@@ -23,8 +23,13 @@ public class collision : MonoBehaviour
     {   
         // BOSS SECTION*************************************************
         if(collision.CompareTag("enemy"))
-           DieAndRestart();
+            DieAndRestart();
+        
         // END OF BOSS**************************************************
+        if (collision.gameObject.CompareTag("checkpoint"))
+        {
+            CheckpointManager.SetCheckpoint(collision.transform.position);
+        }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {   // END OF BOSS**************************************************
@@ -39,10 +44,8 @@ public class collision : MonoBehaviour
         
         // MINI GAME SECTION********************************************
 
-        if(collision.gameObject.CompareTag("Trap")){
-                DieAndRestart();
-            
-        }
+        if(collision.gameObject.CompareTag("Trap"))
+            DieAndRestart();
 
           // CONVERT GRAVITY************************************
         if (collision.gameObject.CompareTag("Convert_Bl"))
@@ -63,8 +66,9 @@ public class collision : MonoBehaviour
         // END MINI GAME
     }
     void DieAndRestart()
-    {   rb.isKinematic=true;
+    {
         playerAnim.SetTrigger("die");
+        rb.bodyType = RigidbodyType2D.Static;
         gameControllerScript.RestartLevel();
     }
 }
