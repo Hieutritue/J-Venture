@@ -2532,6 +2532,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4075233240576091194, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075233240576091194, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075233240576091194, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075233240576091194, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4075233240820044132, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
       propertyPath: m_Name
       value: SceneManager
@@ -2542,11 +2558,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4075233240820044154, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.72757155
+      value: -233
       objectReference: {fileID: 0}
     - target: {fileID: 4075233240820044154, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9820915
+      value: -127
       objectReference: {fileID: 0}
     - target: {fileID: 4075233240820044154, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
       propertyPath: m_LocalPosition.z
