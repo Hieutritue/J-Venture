@@ -7,11 +7,11 @@ public class collision : MonoBehaviour
     [SerializeField] Animator anim;
     movement playerMovement;
     float countHurtTime=0f;
-    GameController logic;
+    GameController gameControllerScript;
     Rigidbody2D rb;
     void Start()
     {   
-        logic = gameObject.GetComponent<GameController>();
+        gameControllerScript = gameObject.GetComponent<GameController>();
         playerMovement=gameObject.GetComponent<movement>();
         rb=gameObject.GetComponent<Rigidbody2D>();
     }
@@ -21,7 +21,7 @@ public class collision : MonoBehaviour
     {   
         // BOSS SECTION*************************************************
         if(collision.CompareTag("enemy"))
-            logic.RestartLevel();
+            gameControllerScript.RestartLevel();
         // END OF BOSS**************************************************
     }
     void OnCollisionEnter2D(Collision2D collision)
@@ -38,7 +38,7 @@ public class collision : MonoBehaviour
         // MINI GAME SECTION********************************************
 
         if(collision.gameObject.CompareTag("Trap")){
-                logic.RestartLevel();
+                gameControllerScript.RestartLevel();
             
         }
 
