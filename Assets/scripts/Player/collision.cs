@@ -42,6 +42,7 @@ public class collision : MonoBehaviour
         // MINI GAME SECTION********************************************
 
         if(collision.gameObject.CompareTag("Trap")){
+                rb.bodyType = RigidbodyType2D.Static;
                 gameControllerScript.RestartLevel();
             
         }
