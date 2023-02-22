@@ -21,7 +21,7 @@ public class collision : MonoBehaviour
     {   
         // BOSS SECTION*************************************************
         if(collision.CompareTag("enemy"))
-            Debug.Log("hi");
+            logic.RestartLevel();
         // END OF BOSS**************************************************
     }
     void OnCollisionEnter2D(Collision2D collision)
@@ -31,7 +31,7 @@ public class collision : MonoBehaviour
             if(countHurtTime>=20) anim.SetBool("phase2",true);
             anim.SetTrigger("hurt");
             playerMovement.Jump();
-            Debug.Log(countHurtTime);
+            
            }
         // END OF BOSS*************************************************
         
@@ -39,7 +39,7 @@ public class collision : MonoBehaviour
 
         if(collision.gameObject.CompareTag("Trap")){
                 logic.RestartLevel();
-            Debug.Log("huhuhuhu");
+            
         }
 
           // CONVERT GRAVITY************************************
