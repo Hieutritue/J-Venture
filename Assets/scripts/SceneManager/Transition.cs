@@ -23,7 +23,9 @@ public class Transition : MonoBehaviour
     IEnumerator DelayedTransition(int index)
     {
         anim.SetTrigger("triggertransition");
-        yield return new WaitForSeconds(transitionDelay);
+       
+        yield return new WaitForSeconds(transitionDelay); // cho mot chut roi moi chay transition
+        
         SceneManager.LoadScene(index);
         
     }
