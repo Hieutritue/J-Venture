@@ -243,6 +243,10 @@ PrefabInstance:
       propertyPath: jumpingPower
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 5248160920641515169, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ec5485febdce38d40bac9d565c6b06d9, type: 2}
     - target: {fileID: 5248160920641515182, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_GravityScale
       value: 3
@@ -291,6 +295,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8340306849077736262, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1023954457}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
 --- !u!1 &359527191 stripped
