@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class collision : MonoBehaviour
 {
-    [SerializeField] Animator anim;
+    [SerializeField] Animator wolfAnim;
+    [SerializeField] Animator playerAnim;
     movement playerMovement;
     float countHurtTime=0f;
     GameController gameControllerScript;
@@ -14,6 +15,7 @@ public class collision : MonoBehaviour
         gameControllerScript = gameObject.GetComponent<GameController>();
         playerMovement=gameObject.GetComponent<movement>();
         rb=gameObject.GetComponent<Rigidbody2D>();
+        playerAnim=gameObject.GetComponent<Animator>();
     }
 
 
@@ -21,15 +23,15 @@ public class collision : MonoBehaviour
     {   
         // BOSS SECTION*************************************************
         if(collision.CompareTag("enemy"))
-            gameControllerScript.RestartLevel();
+           DieAndRestart();
         // END OF BOSS**************************************************
     }
     void OnCollisionEnter2D(Collision2D collision)
     {   // END OF BOSS**************************************************
         if(collision.gameObject.tag=="enemy" && playerMovement.OnEnemy())
            {countHurtTime+=1;
-            if(countHurtTime>=20) anim.SetBool("phase2",true);
-            anim.SetTrigger("hurt");
+            if(countHurtTime>=20) wolfAnim.SetBool("phase2",true);
+            wolfAnim.SetTrigger("hurt");
             playerMovement.Jump();
             
            }
@@ -38,7 +40,7 @@ public class collision : MonoBehaviour
         // MINI GAME SECTION********************************************
 
         if(collision.gameObject.CompareTag("Trap")){
-                gameControllerScript.RestartLevel();
+                DieAndRestart();
             
         }
 
@@ -59,5 +61,10 @@ public class collision : MonoBehaviour
         }
           //END CONVERT GRAVITY********************************
         // END MINI GAME
+    }
+    void DieAndRestart()
+    {   rb.isKinematic=true;
+        playerAnim.SetTrigger("die");
+        gameControllerScript.RestartLevel();
     }
 }

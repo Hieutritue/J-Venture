@@ -386,8 +386,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218001476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.3893602, y: -0.13581848, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 15, y: -0.13581848, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2552,6 +2552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4075233240820044132, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4075233240820044154, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2756,6 +2760,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -2716346309693053501, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+      propertyPath: jumpingPower
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2716346309693053501, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 0}
@@ -2853,11 +2861,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.97
+      value: 21.81
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.6
+      value: -1.51
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2944,9 +2952,17 @@ PrefabInstance:
       value: 0.46000028
       objectReference: {fileID: 0}
     - target: {fileID: 8340306849077736262, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 898826416}
+    - target: {fileID: 8340306849077736262, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: sceneTransition
       value: 
       objectReference: {fileID: 1761905455}
+    - target: {fileID: 8340306849077736262, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+      propertyPath: transitionScript
+      value: 
+      objectReference: {fileID: 1241503233}
     - target: {fileID: 8913557016891326499, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_Bounds.m_Center.x
       value: 0.0014030039
@@ -3236,7 +3252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753834772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.0020523071, y: 3.10217, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3906,6 +3922,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
   m_PrefabInstance: {fileID: 594878309}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &898826416 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5248160920641515169, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+  m_PrefabInstance: {fileID: 594878309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &911877203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4122,7 +4143,7 @@ GameObject:
   - component: {fileID: 951447597}
   - component: {fileID: 951447596}
   m_Layer: 7
-  m_Name: blockbay4
+  m_Name: blockBoostJump
   m_TagString: JumpTrap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4299,7 +4320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182779551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.97, y: 0, z: -10.13}
+  m_LocalPosition: {x: 21.807947, y: -0.012170076, z: -10.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4627,6 +4648,17 @@ PolygonCollider2D:
       - {x: 1.095, y: 1.9499999}
       - {x: 1.095, y: 2.23}
       - {x: 1.175, y: 2.47}
+--- !u!114 &1241503233 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4075233240820044133, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
+  m_PrefabInstance: {fileID: 451928641}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea45c0d35b9dc941a537f85cf2388e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1271805260
 GameObject:
   m_ObjectHideFlags: 0
