@@ -23,6 +23,7 @@ public class movement : MonoBehaviour
         {
             jumpingPower = 8f;
         }
+        
     }
     
     void Update()

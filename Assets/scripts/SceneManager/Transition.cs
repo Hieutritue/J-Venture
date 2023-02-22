@@ -6,6 +6,7 @@ public class Transition : MonoBehaviour
 {
     [SerializeField] Animator anim;
     [SerializeField] float transitionDelay = 1.0f;
+
     void Start()
     {
         anim = GameObject.Find("Transition").GetComponent<Animator>();
@@ -14,6 +15,7 @@ public class Transition : MonoBehaviour
     // Update is called once per frame
     public void NextLevel()
     {
+        CheckpointManager.currentLevel++;
         StartCoroutine(DelayedTransition(SceneManager.GetActiveScene().buildIndex+1));
     }
     public void ReloadCurrentLevel()
@@ -22,9 +24,10 @@ public class Transition : MonoBehaviour
     }
     IEnumerator DelayedTransition(int index)
     {
+        Debug.Log("abc");
+        CheckpointManager.SetCheckpoint(GameObject.FindGameObjectWithTag("Player").transform.position);
         anim.SetTrigger("triggertransition");
         yield return new WaitForSeconds(transitionDelay);
         SceneManager.LoadScene(index);
-        
     }
 }

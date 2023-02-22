@@ -23,6 +23,10 @@ public class collision : MonoBehaviour
         if(collision.CompareTag("enemy"))
             gameControllerScript.RestartLevel();
         // END OF BOSS**************************************************
+        if (collision.gameObject.CompareTag("checkpoint"))
+        {
+            CheckpointManager.SetCheckpoint(collision.transform.position);
+        }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {   // END OF BOSS**************************************************
