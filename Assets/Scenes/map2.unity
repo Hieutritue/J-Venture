@@ -1698,6 +1698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bigblock
       objectReference: {fileID: 0}
+    - target: {fileID: 2096492121685977787, guid: 4d8717f3300deca40b9159f088d9e4cc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2096492121685977733, guid: 4d8717f3300deca40b9159f088d9e4cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4d8717f3300deca40b9159f088d9e4cc, type: 3}
