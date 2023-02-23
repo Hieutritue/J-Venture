@@ -32,7 +32,7 @@ public class movedBL : MonoBehaviour
 
         if( isOn && transform.position.x >=-34)
         {
-            transform.Translate(Vector2.left * 1 * Time.fixedDeltaTime);
+            transform.Translate(Vector2.left * 2 * Time.fixedDeltaTime);
         }
     }
 }
