@@ -51,6 +51,12 @@ TagManager:
   - name: Terrain
     uniqueID: 1919016227
     locked: 0
+  - name: hidden trap
+    uniqueID: 977226555
+    locked: 0
+  - name: big block
+    uniqueID: 1251642283
+    locked: 0
   - name: player
     uniqueID: 3226142291
     locked: 0
