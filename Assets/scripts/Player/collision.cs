@@ -5,6 +5,8 @@ using UnityEngine;
 public class collision : MonoBehaviour
 {
     [SerializeField] Animator wolfAnim;
+    [SerializeField] AudioSource music;
+    [SerializeField] AudioSource dieSFX;
     [SerializeField] Animator playerAnim;
     movement playerMovement;
     float countHurtTime=0f;
@@ -66,7 +68,7 @@ public class collision : MonoBehaviour
         // END MINI GAME
     }
     void DieAndRestart()
-    {
+    {   music.Stop();
         playerAnim.SetTrigger("die");
         rb.bodyType = RigidbodyType2D.Static;
         gameControllerScript.RestartLevel();
