@@ -34,7 +34,7 @@ public class collision : MonoBehaviour
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
-    {   // END OF BOSS**************************************************
+    {   // BOSS**************************************************
         if(collision.gameObject.tag=="enemy" && playerMovement.OnEnemy())
            {countHurtTime+=1;
             if(countHurtTime>=20) wolfAnim.SetBool("phase2",true);
