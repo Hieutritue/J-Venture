@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private Transform player;
-    private void Update()
+    public float FollowSpeed = 2f;
+    public float yOffset =1f;
+    public Transform target;
+
+    // Update is called once per frame
+    void Update()
     {
-        transform.position = new Vector3(player.position.x, transform.position.y, transform.position.z);
+        Vector3 newPos = new Vector3(target.position.x,target.position.y + yOffset,-10f);
+        transform.position = Vector3.Slerp(transform.position,newPos,FollowSpeed*Time.deltaTime);
     }
 }
