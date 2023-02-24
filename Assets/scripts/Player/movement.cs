@@ -19,7 +19,7 @@ public class movement : MonoBehaviour
         {
             jumpingPower = 20f;
         }
-        if (collision.gameObject.CompareTag("Untagged"))
+        if (collision.gameObject.CompareTag("resetJumpower"))
         {
             jumpingPower = 8f;
         }

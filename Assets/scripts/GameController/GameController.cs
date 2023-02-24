@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
-{
+{   
+  
     [SerializeField] GameObject sceneTransition;
     [SerializeField] Transition transitionScript;
     void Awake() 
@@ -15,5 +16,6 @@ public class GameController : MonoBehaviour
     public void RestartLevel()
     {
         transitionScript.ReloadCurrentLevel();
+        
     }
 }
