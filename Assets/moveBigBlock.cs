@@ -19,7 +19,7 @@ public class moveBigBlock : MonoBehaviour
             movedLeft=true;
     }
     private void OnTriggerStay2D(Collider2D other) {
-        if(other.CompareTag("Player")&&timer>=1f&&transform.position.x<=-75f)
+        if(other.CompareTag("Player")&&timer>=0.5f&&transform.position.x<=-78f)
         {
             transform.Translate(Vector3.right*18f*Time.deltaTime);
             
