@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4965714339288281714}
   - component: {fileID: 1713350857609319714}
   - component: {fileID: 8187049774427408071}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SkyBl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
