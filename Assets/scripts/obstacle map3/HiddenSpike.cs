@@ -20,7 +20,7 @@ public class HiddenSpike : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isRaising && transform.position.y <=2.4)
+        if (isRaising && transform.position.y <=0.4)
         {
             transform.Translate(Vector2.up * raiseSpeed * Time.fixedDeltaTime);
         }
