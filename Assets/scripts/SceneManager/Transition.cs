@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class Transition : MonoBehaviour
 {
     [SerializeField] Animator anim;
-    [SerializeField] float transitionDelay = 1.0f;
+    [SerializeField] float transitionDelay = 3.0f;
 
     void Start()
     {
@@ -28,7 +28,7 @@ public class Transition : MonoBehaviour
         CheckpointManager.SetCheckpoint(GameObject.FindGameObjectWithTag("Player").transform.position);
         anim.SetTrigger("triggertransition");
        
-        yield return new WaitForSeconds(transitionDelay); // cho mot chut roi moi chay transition
+        yield return new WaitForSeconds(transitionDelay); // cho mot chut roi moi chay scene moi
         
         SceneManager.LoadScene(index);
     }

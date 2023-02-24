@@ -5,6 +5,8 @@ using UnityEngine;
 public class collision : MonoBehaviour
 {
     [SerializeField] Animator wolfAnim;
+    [SerializeField] AudioSource music;
+    [SerializeField] AudioSource dieSFX;
     [SerializeField] Animator playerAnim;
     movement playerMovement;
     float countHurtTime=0f;
@@ -32,7 +34,7 @@ public class collision : MonoBehaviour
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
-    {   // END OF BOSS**************************************************
+    {   // BOSS**************************************************
         if(collision.gameObject.tag=="enemy" && playerMovement.OnEnemy())
            {countHurtTime+=1;
             if(countHurtTime>=20) wolfAnim.SetBool("phase2",true);
@@ -66,7 +68,7 @@ public class collision : MonoBehaviour
         // END MINI GAME
     }
     void DieAndRestart()
-    {
+    {   music.Stop();
         playerAnim.SetTrigger("die");
         rb.bodyType = RigidbodyType2D.Static;
         gameControllerScript.RestartLevel();

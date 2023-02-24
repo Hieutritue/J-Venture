@@ -11,6 +11,7 @@ TagManager:
   - enemy
   - background
   - checkpoint
+  - resetJumpower
   layers:
   - Default
   - TransparentFX
