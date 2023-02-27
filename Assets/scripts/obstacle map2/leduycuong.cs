@@ -6,7 +6,6 @@ public class leduycuong : MonoBehaviour
 {   
     [SerializeField] Transform player;
     [SerializeField] float speed=2f;
-    [SerializeField] LayerMask playerLayer;
     public bool active=false;
     void Start()
     {
@@ -22,5 +21,11 @@ public class leduycuong : MonoBehaviour
         transform.Translate(Vector3.left*speed*Time.deltaTime);
         transform.position=new Vector3(transform.position.x,player.position.y,transform.position.z);
         }
+    }
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.CompareTag("Trap"))
+            {
+                Destroy(gameObject);
+            }
     }
 }
