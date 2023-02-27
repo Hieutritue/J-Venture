@@ -69,6 +69,7 @@ public class collision : MonoBehaviour
     }
     void DieAndRestart()
     {   music.Stop();
+        dieSFX.Play();
         playerAnim.SetTrigger("die");
         rb.bodyType = RigidbodyType2D.Static;
         gameControllerScript.RestartLevel();

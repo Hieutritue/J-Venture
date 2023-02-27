@@ -1121,7 +1121,7 @@ MonoBehaviour:
   wolfAnim: {fileID: 0}
   music: {fileID: 337619174708577785}
   dieSFX: {fileID: 0}
-  playerAnim: {fileID: 0}
+  playerAnim: {fileID: 5248160920641515169}
 --- !u!114 &5248160920060060057
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,27 +7,19 @@ public class movedBlockDown : MonoBehaviour
     public float Speed = 2f;
 
     private bool isRaising = false;
-    private bool isOn = false;
 
-    private void OnCollisionEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player") && !isRaising)
+     private void OnCollisionEnter2D(Collision2D other){
+        if(other.gameObject.tag=="Player" && !isRaising)
         {
             isRaising = true;
         }
     }
-    
 
     private void FixedUpdate()
     {
-        if (isRaising && transform.position.y >= -10)
+        if (isRaising && transform.position.y >= -11)
         {
             transform.Translate(Vector2.down * Speed * Time.fixedDeltaTime);
-        }
-
-        if (isOn && transform.position.y >= -28)
-        {
-            transform.Translate(Vector2.left * 2 * Time.fixedDeltaTime);
         }
     }
 }
