@@ -20,7 +20,7 @@ public class trapKhai : MonoBehaviour
     {
         if (isRaising)
         {
-            transform.Translate(Vector2.right * Speed * Time.fixedDeltaTime);
+            transform.Translate(Vector2.left * Speed * Time.fixedDeltaTime);
         }
     }
 }
