@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a86f5eb9-d6d3-4fd9-8369-85a72acee086" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.J-Venture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.J-Venture/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/map3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/map3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scripts/Enemy/EnemyPatrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Enemy/EnemyPatrol.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scripts/obstacle map3/WaypointFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/obstacle map3/WaypointFollower.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +87,8 @@
       <updated>1677075603382</updated>
       <workItem from="1677075607429" duration="209000" />
       <workItem from="1677430386301" duration="3975000" />
+      <workItem from="1677599003171" duration="39000" />
+      <workItem from="1677599116040" duration="1064000" />
     </task>
     <servers />
   </component>

@@ -32,7 +32,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         return transform.localScale.x > Mathf.Epsilon;
     }
-
+    
     private void OnTriggerExit2D(Collider2D collision)
     {
         //Turn
