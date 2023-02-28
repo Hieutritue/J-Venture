@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amp: 2.7
-  freq: 4
+  freq: 3
 --- !u!212 &100958441
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3839,7 +3839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.51
+      value: -13.05
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4843,7 +4843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amp: 2.7
-  freq: 4
+  freq: 3
 --- !u!212 &663834194
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5995,7 +5995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amp: 2.7
-  freq: 4
+  freq: 3.5
 --- !u!212 &1368883101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8294,7 +8294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amp: 2.7
-  freq: 4
+  freq: 3.5
 --- !u!212 &2050207826
 SpriteRenderer:
   m_ObjectHideFlags: 0
