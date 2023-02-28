@@ -20,6 +20,7 @@ public class goalCloud : MonoBehaviour
             isRaising = true;
         }
     }
+    
      
 
     private void FixedUpdate()

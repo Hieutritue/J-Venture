@@ -8,20 +8,19 @@ public class phase2idolwolf : StateMachineBehaviour
     float rand = 0f;
    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        rand = Random.Range(0,6);
+        rand = Random.Range(0,5);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {   timer+=Time.deltaTime;
         
-        if(timer>=4f) 
+        if(timer>=3.5f) 
             {
                 if(rand<=1) animator.SetTrigger("bite");
                 if(rand<=2&&rand>1) animator.SetTrigger("hook");
                 if(rand<=3&&rand>2) animator.SetTrigger("scratch");
                 if(rand<=4&&rand>3) animator.SetTrigger("combo1");
-                if(rand<=5&&rand>4) animator.SetTrigger("combo2");
                 timer=0;
             }
 

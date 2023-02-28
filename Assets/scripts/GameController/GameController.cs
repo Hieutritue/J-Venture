@@ -18,4 +18,8 @@ public class GameController : MonoBehaviour
     {
         transitionScript.ReloadCurrentLevel();
     }
+    public void NextLevel()
+    {
+        transitionScript.NextLevel();
+    }
 }
