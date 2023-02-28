@@ -3395,6 +3395,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.100525, y: 1.0062542}
   m_EdgeRadius: 0
+--- !u!1 &366295624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4075233240820044132, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
+  m_PrefabInstance: {fileID: 1710774598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &366295625 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4075233240820044133, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
+  m_PrefabInstance: {fileID: 1710774598}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366295624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea45c0d35b9dc941a537f85cf2388e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &414225202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3528,6 +3544,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8340306849077736262, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+      propertyPath: sceneTransition
+      value: 
+      objectReference: {fileID: 366295624}
+    - target: {fileID: 8340306849077736262, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+      propertyPath: transitionScript
+      value: 
+      objectReference: {fileID: 366295625}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
 --- !u!1001 &482100830
@@ -3634,7 +3658,7 @@ Transform:
   - {fileID: 1678122965}
   - {fileID: 1729890}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &537898153
 PrefabInstance:
@@ -5072,7 +5096,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1421286113
 PolygonCollider2D:
@@ -5370,7 +5394,7 @@ Transform:
   - {fileID: 1034866635}
   - {fileID: 1685454971}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1486971804 stripped
 Transform:
@@ -6470,7 +6494,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1908174946 stripped
 Transform:
