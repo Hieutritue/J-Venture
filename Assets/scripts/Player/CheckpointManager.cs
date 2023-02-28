@@ -22,6 +22,4 @@ public class CheckpointManager : MonoBehaviour
             player.transform.position = checkpointPosition;
         }
     }
-
-
 }
