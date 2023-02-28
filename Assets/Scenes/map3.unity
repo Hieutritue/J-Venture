@@ -7279,7 +7279,7 @@ PrefabInstance:
     - target: {fileID: -2716346309693053501, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: dieSFX
       value: 
-      objectReference: {fileID: 799209853}
+      objectReference: {fileID: 944314044}
     - target: {fileID: 4659665815924088820, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_Name
       value: main
