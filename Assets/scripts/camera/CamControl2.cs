@@ -5,7 +5,7 @@ using UnityEngine;
 public class CamControl2 : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    private bool isFollow= false;
+
     private void Update()
     {
         if(player.position.x >= 11.5)
@@ -16,7 +16,9 @@ public class CamControl2 : MonoBehaviour
         
             transform.position = new Vector3(player.position.x, transform.position.y, transform.position.z);
         }
-        
+        if(player.position.y <=-7.65) {
+            transform.position = new Vector3(player.position.x,-9, transform.position.z);
+        }
     }
 }
 
