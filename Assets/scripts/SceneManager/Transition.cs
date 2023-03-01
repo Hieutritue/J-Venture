@@ -21,13 +21,13 @@ public class Transition : MonoBehaviour
     }
 
     public void ReloadCurrentLevel()
-    {
+    {   
         StartCoroutine(DelayedTransition(SceneManager.GetActiveScene().buildIndex));
     }
 
     IEnumerator DelayedTransition(int index)
     {
-        Debug.Log("abc");
+        
         CheckpointManager.SetCheckpoint(GameObject.FindGameObjectWithTag("Player").transform.position);
         anim.SetTrigger("triggertransition");
 
