@@ -13,6 +13,9 @@ public class movement : MonoBehaviour
     [SerializeField] LayerMask bounceLayer;
     [SerializeField] LayerMask enemyLayer;
     [SerializeField] private AudioSource jumpSoundEffect;
+
+    [SerializeField] private AudioSource fartSFX;
+    
     
   private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -52,6 +55,7 @@ public class movement : MonoBehaviour
     void Fart()
     {
         anim.SetTrigger("fart");
+        fartSFX.Play();
     }
     public void Jump()
     {
