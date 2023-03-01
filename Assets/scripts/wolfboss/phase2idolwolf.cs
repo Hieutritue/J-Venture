@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class phase2idolwolf : StateMachineBehaviour
-{
+{   
+    [SerializeField] AudioSource grrSFX;
     float timer = 0f;
     float rand = 0f;
    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        rand = Random.Range(0,5);
+        rand = Random.Range(0,6);
+        grrSFX=GameObject.Find("grrSFX").GetComponent<AudioSource>();
+        grrSFX.Play();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -21,6 +24,7 @@ public class phase2idolwolf : StateMachineBehaviour
                 if(rand<=2&&rand>1) animator.SetTrigger("hook");
                 if(rand<=3&&rand>2) animator.SetTrigger("scratch");
                 if(rand<=4&&rand>3) animator.SetTrigger("combo1");
+                if(rand<=5&&rand>4) animator.SetTrigger("combo1");
                 timer=0;
             }
 

@@ -315,21 +315,29 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -23.889618
       objectReference: {fileID: 0}
+    - target: {fileID: 1064586719108234781, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 11.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064586719108234781, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 15.6
+      objectReference: {fileID: 0}
     - target: {fileID: 1064586719108234782, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
       propertyPath: m_Size.x
-      value: 8.913936
+      value: 9.553995
       objectReference: {fileID: 0}
     - target: {fileID: 1064586719108234782, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
       propertyPath: m_Size.y
-      value: 15.703608
+      value: 2.4452019
       objectReference: {fileID: 0}
     - target: {fileID: 1064586719108234782, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
       propertyPath: m_Offset.x
-      value: 1.346396
+      value: 1.0263662
       objectReference: {fileID: 0}
     - target: {fileID: 1064586719108234782, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
       propertyPath: m_Offset.y
-      value: 0.0389328
+      value: -6.59027
       objectReference: {fileID: 0}
     - target: {fileID: 1064586719108234782, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -343,8 +351,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: sun (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1064586719108234782, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
 --- !u!1 &42271680 stripped
 GameObject:
@@ -6098,7 +6105,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0872d0aaa4b9d104f9663140c03dde4e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -7294,11 +7301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.28
+      value: 27.48
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.813
+      value: -5.32
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.z
