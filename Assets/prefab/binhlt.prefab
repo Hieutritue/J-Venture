@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 1311874006504661871}
   - component: {fileID: 1311874006504661868}
   - component: {fileID: 1311874006504661869}
-  m_Layer: 0
+  - component: {fileID: 1639559650773645078}
+  - component: {fileID: 2131658052734271787}
+  m_Layer: 8
   m_Name: binhlt
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,3 +99,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c5ee892e2c8c314e8d441c94c2f3f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &1639559650773645078
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311874006504661858}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.1098719}
+  serializedVersion: 2
+  m_Radius: 6.8090296
+--- !u!95 &2131658052734271787
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311874006504661858}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c13f60a8b7b83ec498cb4e439106ff37, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
