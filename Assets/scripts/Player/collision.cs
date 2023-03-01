@@ -29,10 +29,6 @@ public class collision : MonoBehaviour
             DieAndRestart();
 
         // END OF BOSS**************************************************
-        if (collision.gameObject.CompareTag("checkpoint"))
-        {
-            CheckpointManager.SetCheckpoint(collision.transform.position);
-        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
