@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class collision : MonoBehaviour
 {
     [SerializeField] Animator wolfAnim;
@@ -31,7 +31,11 @@ public class collision : MonoBehaviour
         // END OF BOSS**************************************************
         if (collision.gameObject.CompareTag("checkpoint"))
         {
-            CheckpointManager.SetCheckpoint(collision.transform.position);
+            // CheckpointManager.SetCheckpoint(collision.transform.position);
+            SaveCheckpoint scp;
+            scp = GameObject.FindGameObjectWithTag("savedCheckpoint").GetComponent<SaveCheckpoint>();
+            scp.lastCheckpointPos = transform.position;
+            SavePlayerPref.Save(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
@@ -78,6 +82,8 @@ public class collision : MonoBehaviour
         dieSFX.Play();
         playerAnim.SetTrigger("die");
         rb.bodyType = RigidbodyType2D.Static;
+        //Increase Deaths then restart
+        SavePlayerPref.IncreaseDeath();
         gameControllerScript.RestartLevel();
     }
 }

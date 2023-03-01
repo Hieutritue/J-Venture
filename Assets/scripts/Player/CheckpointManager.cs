@@ -16,7 +16,7 @@ public class CheckpointManager : MonoBehaviour
     {
         if (checkpoints.ContainsKey(currentLevel))
         {
-            Debug.Log("abc");
+            Debug.Log(currentLevel);
             Vector2 checkpointPosition = checkpoints[currentLevel];
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = checkpointPosition;

@@ -12,6 +12,7 @@ TagManager:
   - background
   - checkpoint
   - resetJumpower
+  - savedCheckpoint
   layers:
   - Default
   - TransparentFX
