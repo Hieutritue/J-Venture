@@ -24,5 +24,10 @@ public class HiddenSpike : MonoBehaviour
         {
             transform.Translate(Vector2.up * raiseSpeed * Time.fixedDeltaTime);
         }
+        if(transform.position.y >0)
+        {
+            Destroy(gameObject);
+        }
     }
+
 }

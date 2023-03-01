@@ -27,7 +27,6 @@ public class Transition : MonoBehaviour
 
     IEnumerator DelayedTransition(int index)
     {
-        
         CheckpointManager.SetCheckpoint(GameObject.FindGameObjectWithTag("Player").transform.position);
         anim.SetTrigger("triggertransition");
 
