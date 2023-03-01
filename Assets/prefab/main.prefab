@@ -1374,8 +1374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3b0646a9400f74697373f2d9916c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneTransition: {fileID: 0}
-  transitionScript: {fileID: 0}
+  sceneTransition: {fileID: 4075233240820044132, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
+  transitionScript: {fileID: 4075233240820044133, guid: 1b8c5973d5773a543b0bc44f57aee782, type: 3}
 --- !u!4 &5792311419146127255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: cb20110af36949a4a875c729f9bfe62e, type: 3}

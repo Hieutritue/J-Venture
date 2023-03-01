@@ -29,10 +29,6 @@ public class collision : MonoBehaviour
             DieAndRestart();
 
         // END OF BOSS**************************************************
-        if (collision.gameObject.CompareTag("checkpoint"))
-        {
-            CheckpointManager.SetCheckpoint(collision.transform.position);
-        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -42,6 +38,7 @@ public class collision : MonoBehaviour
         {
             countHurtTime += 1;
             if (countHurtTime >= 10) wolfAnim.SetBool("phase2", true);
+            if (countHurtTime >= 20) wolfAnim.SetTrigger("die");
             wolfAnim.SetTrigger("hurt");
             playerMovement.Jump();
         }

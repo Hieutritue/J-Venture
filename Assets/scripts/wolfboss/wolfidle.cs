@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class wolfidle : StateMachineBehaviour
-{
+{   [SerializeField] AudioSource grrSFX;
     float timer = 0f;
     float rand = 0f;
    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         rand = Random.Range(0,4);
+        grrSFX=GameObject.Find("grrSFX").GetComponent<AudioSource>();
+        grrSFX.Play();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

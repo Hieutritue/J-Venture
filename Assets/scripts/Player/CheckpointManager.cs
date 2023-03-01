@@ -1,25 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CheckpointManager : MonoBehaviour
 {
-    public static int currentLevel = 0;
-    public static Dictionary<int, Vector2> checkpoints = new Dictionary<int, Vector2>();
-
-    public static void SetCheckpoint(Vector2 checkpointPosition)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        checkpoints[currentLevel] = checkpointPosition;
-    }
-
-    public static void LoadCheckpoint()
-    {
-        if (checkpoints.ContainsKey(currentLevel))
+        if (collider.CompareTag("Player"))
         {
             Debug.Log("abc");
-            Vector2 checkpointPosition = checkpoints[currentLevel];
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            player.transform.position = checkpointPosition;
+            // Lưu checkpoint vị trí của người chơi bằng PlayerPrefs
+            PlayerPrefs.SetFloat("checkpoint_x", transform.position.x);
+            PlayerPrefs.SetFloat("checkpoint_y", transform.position.y);
+            PlayerPrefs.SetFloat("checkpoint_z", transform.position.z);
+            PlayerPrefs.Save();
         }
     }
 }
