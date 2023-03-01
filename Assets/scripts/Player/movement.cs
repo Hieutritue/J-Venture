@@ -12,6 +12,7 @@ public class movement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] LayerMask bounceLayer;
     [SerializeField] LayerMask enemyLayer;
+    [SerializeField] private AudioSource jumpSoundEffect;
     
   private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -54,6 +55,7 @@ public class movement : MonoBehaviour
     }
     public void Jump()
     {
+        jumpSoundEffect.Play();
         if (rb.gravityScale > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
