@@ -6,10 +6,10 @@ public class CheckpointManager : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            Debug.Log(currentLevel);
-            Vector2 checkpointPosition = checkpoints[currentLevel];
+            //Debug.Log(currentLevel);
+           // Vector2 checkpointPosition = checkpoints[currentLevel];
             GameObject player = GameObject.FindGameObjectWithTag("Player");
-            player.transform.position = checkpointPosition;
+            //player.transform.position = checkpointPosition;
         }
     }
 }

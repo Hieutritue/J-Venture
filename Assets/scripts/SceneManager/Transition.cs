@@ -27,7 +27,7 @@ public class Transition : MonoBehaviour
 
     IEnumerator DelayedTransition(int index)
     {
-        CheckpointManager.SetCheckpoint(GameObject.FindGameObjectWithTag("Player").transform.position);
+        //CheckpointManager.SetCheckpoint(GameObject.FindGameObjectWithTag("Player").transform.position);
         anim.SetTrigger("triggertransition");
 
         yield return new WaitForSeconds(transitionDelay); // cho mot chut roi moi chay scene moi
