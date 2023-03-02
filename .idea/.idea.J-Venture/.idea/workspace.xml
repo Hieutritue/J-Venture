@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a86f5eb9-d6d3-4fd9-8369-85a72acee086" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/scripts/Player/PlayerPos.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scripts/Player/PlayerPos.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scripts/Player/SaveCheckpoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/scripts/Player/SaveCheckpoint.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.J-Venture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.J-Venture/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/map1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/map1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/map2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/map2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/map3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/map3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/map5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/map5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scripts/Player/CheckpointManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Player/CheckpointManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scripts/Player/collision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Player/collision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-    </list>
+    <list default="true" id="a86f5eb9-d6d3-4fd9-8369-85a72acee086" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +94,7 @@
       <workItem from="1677599003171" duration="39000" />
       <workItem from="1677599116040" duration="6889000" />
       <workItem from="1677657304304" duration="17588000" />
-      <workItem from="1677677477874" duration="3291000" />
+      <workItem from="1677677477874" duration="3909000" />
     </task>
     <servers />
   </component>
