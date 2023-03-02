@@ -1,20 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CheckpointManager : MonoBehaviour
 {
-    public static int currentLevel = 0;
-    public static Dictionary<int, Vector2> checkpoints = new Dictionary<int, Vector2>();
-
-    public static void SetCheckpoint(Vector2 checkpointPosition)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        checkpoints[currentLevel] = checkpointPosition;
-    }
-
-    public static void LoadCheckpoint()
-    {
-        if (checkpoints.ContainsKey(currentLevel))
+        if (collider.CompareTag("Player"))
         {
             Debug.Log(currentLevel);
             Vector2 checkpointPosition = checkpoints[currentLevel];
