@@ -6,12 +6,14 @@ public class fart : StateMachineBehaviour
 {
     movement playerMovement;
     Rigidbody2D rb;
+    [SerializeField] private AudioSource fartSFX;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-   {    
+   {    fartSFX=GameObject.Find("fartSFX").GetComponent<AudioSource>();
         playerMovement=animator.GetComponent<movement>();
         rb=animator.GetComponent<Rigidbody2D>();
         rb.velocity=new Vector2(0f,rb.velocity.y);
         playerMovement.enabled=false;
+        fartSFX.Play();
    }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class introWolf : StateMachineBehaviour
 {
-    [SerializeField] movement playerMovement;
+  
     [SerializeField] AudioSource growl;
     float timer=0;
     bool isGrowling=false;
@@ -13,8 +13,8 @@ public class introWolf : StateMachineBehaviour
      // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-       playerMovement=GameObject.Find("main").GetComponent<movement>();
-       playerMovement.enabled=false;
+      
+       
        growl=GameObject.Find("wolfboss").GetComponent<AudioSource>();
        huu=GameObject.Find("huuSpawner").GetComponent<huuSpawner>();
        binh=GameObject.Find("binhSpawner").GetComponent<binhSpawner>();
@@ -38,7 +38,7 @@ public class introWolf : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-       playerMovement.enabled=true;
+       
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
