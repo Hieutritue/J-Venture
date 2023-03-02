@@ -8,6 +8,7 @@ public class collision : MonoBehaviour
     [SerializeField] AudioSource music;
     [SerializeField] AudioSource dieSFX;
     [SerializeField] Animator playerAnim;
+    [SerializeField] AudioSource oofSFX;
     movement playerMovement;
     float countHurtTime = 0f;
     GameController gameControllerScript;
@@ -19,6 +20,7 @@ public class collision : MonoBehaviour
         playerMovement = gameObject.GetComponent<movement>();
         rb = gameObject.GetComponent<Rigidbody2D>();
         playerAnim = gameObject.GetComponent<Animator>();
+        oofSFX=GameObject.Find("oofSFX").GetComponent<AudioSource>();
     }
 
 
@@ -80,6 +82,7 @@ public class collision : MonoBehaviour
     void DieAndRestart()
     {
         music.Stop();
+        oofSFX.Play();
         dieSFX.Play();
         playerAnim.SetTrigger("die");
         rb.bodyType = RigidbodyType2D.Static;
