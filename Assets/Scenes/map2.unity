@@ -775,7 +775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201055592180260455, guid: 51e340792a39ba54aa6ff79bdd75a0c3, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9201055592180260455, guid: 51e340792a39ba54aa6ff79bdd75a0c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3643,6 +3643,7 @@ GameObject:
   - component: {fileID: 382835909}
   - component: {fileID: 382835908}
   - component: {fileID: 382835907}
+  - component: {fileID: 382835910}
   m_Layer: 0
   m_Name: goal
   m_TagString: Untagged
@@ -3843,6 +3844,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &382835910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382835906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e64451be4f5d674ba4d24f4d8ea7660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameControllerScript: {fileID: 0}
 --- !u!1001 &414225202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4429,7 +4443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6049827183322474545, guid: 7224be85b8541bf4da1c53c505593f83, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6049827183322474545, guid: 7224be85b8541bf4da1c53c505593f83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5521,7 +5535,7 @@ Transform:
   - {fileID: 1351289310}
   - {fileID: 1115369389}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034866633
 GameObject:
@@ -7301,7 +7315,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1742869967
 BoxCollider2D:
