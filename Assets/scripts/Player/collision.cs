@@ -48,7 +48,7 @@ public class collision : MonoBehaviour
         {
             countHurtTime += 1;
             if (countHurtTime >= 10) wolfAnim.SetBool("phase2", true);
-            if (countHurtTime >= 20) wolfAnim.SetTrigger("die");
+            if (countHurtTime >= 25) wolfAnim.SetTrigger("die");
             wolfAnim.SetTrigger("hurt");
             playerMovement.Jump();
         }
