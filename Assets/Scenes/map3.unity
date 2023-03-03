@@ -6132,11 +6132,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
   m_PrefabInstance: {fileID: 1496676646}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1234234708 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: -2741923026514604050, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
-  m_PrefabInstance: {fileID: 1496676646}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1234234709
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7424,6 +7419,10 @@ PrefabInstance:
       propertyPath: dieSFX
       value: 
       objectReference: {fileID: 944314044}
+    - target: {fileID: -2716346309693053501, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+      propertyPath: oofSFX
+      value: 
+      objectReference: {fileID: 1496676647}
     - target: {fileID: 1007025134232348763, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_Bounds.m_Center.y
       value: -0.0011924058
@@ -7479,7 +7478,7 @@ PrefabInstance:
     - target: {fileID: 5248160920060060057, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: jumpSoundEffect
       value: 
-      objectReference: {fileID: 1234234708}
+      objectReference: {fileID: 1496676648}
     - target: {fileID: 5785749603162153665, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_Bounds.m_Center.y
       value: -0.006887883
@@ -7574,6 +7573,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+--- !u!82 &1496676647 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4678778044282154514, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+  m_PrefabInstance: {fileID: 1496676646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1496676648 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 100768874, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
+  m_PrefabInstance: {fileID: 1496676646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1543376348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9572,6 +9581,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6354430893670265393, guid: 85b19364cb1548d45bfe66a7f32e5d9d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6354430893670265394, guid: 85b19364cb1548d45bfe66a7f32e5d9d, type: 3}
       propertyPath: m_Name
       value: blockCheckpoint
@@ -9592,7 +9605,8 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6354430893670265393, guid: 85b19364cb1548d45bfe66a7f32e5d9d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 85b19364cb1548d45bfe66a7f32e5d9d, type: 3}
 --- !u!4 &1903824105
 Transform:
