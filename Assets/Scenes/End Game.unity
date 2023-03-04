@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &508223764
 RectTransform:
   m_ObjectHideFlags: 0
@@ -159,7 +159,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 742.9973, y: 351.9106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &508223765
 MonoBehaviour:
@@ -318,7 +318,7 @@ MonoBehaviour:
   - "v\xE0 \u0111\xE3 \u0111\u01B0\u1EE3c b\u1EAFt tay v\u0169 h\u1EA3i l\xE2m."
   typingSpeed: 0.075
   continueButton: {fileID: 1652587588}
-  EGImage: {fileID: 508223765}
+  EGImage: {fileID: 508223763}
 --- !u!1 &965397425
 GameObject:
   m_ObjectHideFlags: 0

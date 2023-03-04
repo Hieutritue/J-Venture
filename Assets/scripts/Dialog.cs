@@ -13,7 +13,7 @@ public class Dialog : MonoBehaviour
     private int index;
 
     public GameObject continueButton;
-    public Image EGImage;
+    public GameObject EGImage;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +48,7 @@ public class Dialog : MonoBehaviour
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
-            EGImage.enabled = true;
+            EGImage.SetActive(true);
             Debug.Log("Image enabled");
         }
     }
