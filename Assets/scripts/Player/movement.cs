@@ -34,18 +34,22 @@ public class movement : MonoBehaviour
     {   
         horizontal = Input.GetAxisRaw("Horizontal");
         anim.SetFloat("speed",Mathf.Abs(horizontal));
-        if(Input.GetKeyDown(KeyCode.F)) 
-            {
-                Fart();
-            }
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if(PauseMenu.isPaused==false)
         {
-            Jump();
+            if(Input.GetKeyDown(KeyCode.F)) 
+                {
+                    Fart();
+                }
+            if (Input.GetButtonDown("Jump") && IsGrounded())
+            {
+                Jump();
+            }
         }
         if(onBounce())
         {
             Jump();
         }
+        
         if(!IsGrounded())  {anim.SetBool("jumping",true);}
         if(IsGrounded()) {anim.SetBool("jumping",false);}
         
