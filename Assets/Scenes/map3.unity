@@ -5235,7 +5235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd40139be8a487e8b5bede4c3a6dcd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCheckpointPos: {x: 9, y: -4, z: -0.13}
+  lastCheckpointPos: {x: 10, y: -5.7, z: -0.13}
   level: 4
 --- !u!1 &1129585676
 GameObject:
@@ -6939,6 +6939,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1189836046574051924, guid: a1bdb78b9c9d896458014f4b1949ca8d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.7103882
+      objectReference: {fileID: 0}
     - target: {fileID: 4092998706313032507, guid: a1bdb78b9c9d896458014f4b1949ca8d, type: 3}
       propertyPath: m_Name
       value: PauseUI
@@ -7603,11 +7607,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.32
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.65
+      value: -5.7
       objectReference: {fileID: 0}
     - target: {fileID: 5792311419146127255, guid: c4532f26b53f74d428d9fd8e89d61028, type: 3}
       propertyPath: m_LocalPosition.z
