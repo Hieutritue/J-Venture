@@ -27,7 +27,8 @@ public class PauseMenu : MonoBehaviour
     }
 
     void Pause()
-    {   AudioListener.pause=true;
+    {   onClickSound.Play();
+        AudioListener.pause=true;
         pauseMenu.SetActive(true);
         Time.timeScale=0f;
         isPaused=true;
