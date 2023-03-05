@@ -1507,6 +1507,7 @@ MonoBehaviour:
   dieSFX: {fileID: 0}
   playerAnim: {fileID: 5248160920641515169}
   oofSFX: {fileID: 0}
+  checkPointSFX: {fileID: 0}
 --- !u!114 &5248160920060060057
 MonoBehaviour:
   m_ObjectHideFlags: 0

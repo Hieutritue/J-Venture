@@ -9,7 +9,8 @@ using UnityEngine.SceneManagement;
         private SaveCheckpoint scp;
 
         void Start()
-        {
+        {   SavePlayerPref.Save(SceneManager.GetActiveScene().buildIndex);
+                Debug.Log(PlayerPrefs.GetInt("level"));
             scp = GameObject.FindGameObjectWithTag("savedCheckpoint").GetComponent<SaveCheckpoint>();
             if (SceneManager.GetActiveScene().buildIndex == scp.level)
             {
@@ -19,6 +20,7 @@ using UnityEngine.SceneManagement;
             {
                 scp.lastCheckpointPos = transform.position;
                 scp.level = SceneManager.GetActiveScene().buildIndex;
+                
             }
             
         }

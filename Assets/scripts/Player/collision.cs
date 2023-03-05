@@ -9,13 +9,14 @@ public class collision : MonoBehaviour
     [SerializeField] AudioSource dieSFX;
     [SerializeField] Animator playerAnim;
     [SerializeField] AudioSource oofSFX;
+    [SerializeField] AudioSource checkPointSFX;
     movement playerMovement;
     float countHurtTime = 0f;
     GameController gameControllerScript;
     Rigidbody2D rb;
 
     void Start()
-    {
+    {   
         gameControllerScript = gameObject.GetComponent<GameController>();
         playerMovement = gameObject.GetComponent<movement>();
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -34,6 +35,7 @@ public class collision : MonoBehaviour
         if (collision.gameObject.CompareTag("checkpoint"))
         {
             // CheckpointManager.SetCheckpoint(collision.transform.position);
+            
             SaveCheckpoint scp;
             scp = GameObject.FindGameObjectWithTag("savedCheckpoint").GetComponent<SaveCheckpoint>();
             scp.lastCheckpointPos = transform.position;

@@ -22,4 +22,8 @@ public class GameController : MonoBehaviour
     {
         transitionScript.NextLevel();
     }
+    public void LoadLevel(int level)
+    {
+        transitionScript.LoadLevel(level);
+    }
 }
