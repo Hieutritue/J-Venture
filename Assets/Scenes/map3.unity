@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -2.2338142
       objectReference: {fileID: 0}
+    - target: {fileID: 1064586719108234783, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1064586719108234788, guid: 647067fcfbe09e54eb97231f95481af8, type: 3}
       propertyPath: m_Name
       value: sun
