@@ -74,6 +74,7 @@ public class Dialog : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             EGImage.SetActive(true);
+            deathCountObject.SetActive(false);
             winSFX.Play();
             Debug.Log("Image enabled");
             ended=true;
