@@ -5,10 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] GameController gameControllerScript;
+    [SerializeField] GameObject transitionCanvas;
     // Start is called before the first frame update
-    public void PlayGame()
+    private void Awake() {
+        gameControllerScript=GameObject.Find("main").GetComponent<GameController>();
+    }
+    public void NewGame()
+    {   transitionCanvas.SetActive(true);
+        SavePlayerPref.Reset();
+        gameControllerScript.NextLevel();
+    }
+    public void Continue()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
     public void QuitGame()
     {

@@ -10,7 +10,7 @@ public class Transition : MonoBehaviour
 
     void Start()
     {
-        anim = GameObject.Find("Transition").GetComponent<Animator>();
+        
         
     }
 
