@@ -17,12 +17,13 @@ Players must control the main character of the game through various traps and en
 
 * Supported OS: Windows, Mac, Linux.
 * Does not work on Nokia!
+* Works on mobile phones with Windows 11.
 
 ### Installing
 
 * FREE DOWNLOAD LINK: [https://drive.google.com/file/d/1pahz24bPc7sI-B9HGzIKjZrycNSnPlhG/view?usp=sharing](https://drive.google.com/file/d/1pahz24bPc7sI-B9HGzIKjZrycNSnPlhG/view?usp=sharing)
-* extraction is needed after downloading the game
-* after extracting, go in PathToJapsof folder and select Game Project.exe to run the game
+* extraction is needed after downloading the game.
+* after extracting, open pathToJapsof folder and select Game Project.exe to run the game.
 
 ## Authors
 
