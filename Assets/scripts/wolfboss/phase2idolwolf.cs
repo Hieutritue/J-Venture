@@ -18,7 +18,7 @@ public class phase2idolwolf : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {   timer+=Time.deltaTime;
         
-        if(timer>=3.5f) 
+        if(timer>=4.2f) 
             {
                 if(rand<=1) animator.SetTrigger("bite");
                 if(rand<=2&&rand>1) animator.SetTrigger("hook");
