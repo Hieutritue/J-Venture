@@ -4,7 +4,7 @@ Path To Japsof is a simple yet challenging platformer game made by team 2 of Jap
 
 ## Description
 
-Players must control the main character of the game through various traps and enemies in order to reach the goal and beat the game.
+Players must control the main character of the game through various traps and enemies in order to reach the goal and beat the game. However, the obstacles are logically created and make a lot of sense. The game is hard, punishing and gets even more challenging as the players make further progress.  
 
 ## Getting Started
 
