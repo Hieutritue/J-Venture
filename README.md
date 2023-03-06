@@ -1,6 +1,6 @@
 # Path-To-Japsof
 
-Path To Japsof is a simple yet challenging platformer game made by team 2 of Japanese Software Engineers Club.
+Path To Japsof is a simple yet challenging platformer game made by team 2 of Japanese Software Engineers Club (FPT University).
 
 ## Description
 
