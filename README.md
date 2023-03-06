@@ -11,6 +11,7 @@ Players must control the main character of the game through various traps and en
 ### Built With
 
 * Unity: [https://unity.com/](https://unity.com/)
+* Adobe Photoshop: [https://www.adobe.com/vn_en/products/photoshop.html](https://www.adobe.com/vn_en/products/photoshop.html)
 
 ### Dependencies
 
