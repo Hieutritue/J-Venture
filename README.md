@@ -28,9 +28,21 @@ Players must control the main character of the game through various traps and en
 ## Authors
 
 Contributors names and contact info:
-* [Thai Le Hieu](https://www.facebook.com/profile.php?id=100081955779154) is very handsome and does not have a girlfriend yet
+* [Thai Le Hieu is very handsome and does not have a girlfriend yet](https://www.facebook.com/profile.php?id=100081955779154)
 * [Pham Kim Thoa](https://www.facebook.com/phamkimthoaviviane)
 * [Nguyen Dinh Nghia](https://www.facebook.com/jack.andrea.54)
-* [Nguyen Le Hai Anh](https://www.facebook.com/113han004) (very ugly) 
+* [Nguyen Le Hai Anh (very ugly)](https://www.facebook.com/113han004)
 * [Nguyen Manh Phu](https://www.facebook.com/nguyen.hand.1)
 * [Hoang Phan Quoc Dat](https://www.facebook.com/profile.php?id=100012376170722)
+
+## Some Random Completely Unrelated people
+
+### Takecare:
+
+* [Nguyen Le Quynh Trang xau xi](https://www.facebook.com/trang.nguyenquynh.988373)
+* [Tran Duc Ky ech op](https://www.facebook.com/profile.php?id=100029071420245)
+* [Nguyen Quang Khai hung du](https://www.facebook.com/profile.php?id=100081790451971)
+
+### Mentor:
+
+* [Dao Xuan Quy Yeu Nam Dung](https://www.facebook.com/x.quy.203)
