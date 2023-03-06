@@ -10,8 +10,8 @@ Players must control the main character of the game through various traps and en
 
 ### Built With
 
-* Unity: [https://unity.com/](https://unity.com/)
-* Adobe Photoshop: [https://www.adobe.com/vn_en/products/photoshop.html](https://www.adobe.com/vn_en/products/photoshop.html)
+* [Unity](https://unity.com/)
+* [Adobe Photoshop](https://www.adobe.com/vn_en/products/photoshop.html)
 
 ### Dependencies
 
@@ -21,16 +21,16 @@ Players must control the main character of the game through various traps and en
 
 ### Installing
 
-* FREE DOWNLOAD LINK: [https://drive.google.com/file/d/1pahz24bPc7sI-B9HGzIKjZrycNSnPlhG/view?usp=sharing](https://drive.google.com/file/d/1pahz24bPc7sI-B9HGzIKjZrycNSnPlhG/view?usp=sharing)
+* FREE DOWNLOAD LINK: [This Is The Game And Hieu Is Extremely Handsome](https://drive.google.com/file/d/1pahz24bPc7sI-B9HGzIKjZrycNSnPlhG/view?usp=sharing)
 * extraction is needed after downloading the game.
 * after extracting, open pathToJapsof folder and select Game Project.exe to run the game.
 
 ## Authors
 
 Contributors names and contact info:
-* Thai Le Hieu is very handsome and does not have a girlfriend yet [https://www.facebook.com/profile.php?id=100081955779154](https://www.facebook.com/profile.php?id=100081955779154)
-* Pham Kim Thoa [https://www.facebook.com/phamkimthoaviviane](https://www.facebook.com/phamkimthoaviviane)
-* Nguyen Dinh Nghia [https://www.facebook.com/jack.andrea.54](https://www.facebook.com/jack.andrea.54)
-* Nguyen Le Hai Anh (very ugly) [https://www.facebook.com/113han004](https://www.facebook.com/113han004)
-* Nguyen Manh Phu [https://www.facebook.com/nguyen.hand.1](https://www.facebook.com/nguyen.hand.1)
-* Hoang Phan Quoc Dat [https://www.facebook.com/profile.php?id=100012376170722](https://www.facebook.com/profile.php?id=100012376170722)
+* [Thai Le Hieu](https://www.facebook.com/profile.php?id=100081955779154) is very handsome and does not have a girlfriend yet
+* [Pham Kim Thoa](https://www.facebook.com/phamkimthoaviviane)
+* [Nguyen Dinh Nghia](https://www.facebook.com/jack.andrea.54)
+* [Nguyen Le Hai Anh](https://www.facebook.com/113han004) (very ugly) 
+* [Nguyen Manh Phu](https://www.facebook.com/nguyen.hand.1)
+* [Hoang Phan Quoc Dat](https://www.facebook.com/profile.php?id=100012376170722)
