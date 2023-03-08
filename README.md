@@ -21,7 +21,7 @@ Players must control the main character of the game through various traps and en
 
 ### Installing
 
-* FREE DOWNLOAD LINK: [This Is The Game And Hieu Is Extremely Handsome](https://hieutritue.itch.io/path-to-japsof)
+* FREE DOWNLOAD LINK: [This Is The Game And Hieu Is Extremely Handsome](https://drive.google.com/file/d/1pahz24bPc7sI-B9HGzIKjZrycNSnPlhG/view?usp=sharing)
 * extraction is needed after downloading the game.
 * after extracting, open pathToJapsof folder and select Game Project.exe to run the game.
 
