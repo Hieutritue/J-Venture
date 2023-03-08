@@ -41,6 +41,9 @@ public class collision : MonoBehaviour
             scp.lastCheckpointPos = transform.position;
             SavePlayerPref.Save(SceneManager.GetActiveScene().buildIndex);
         }
+
+        if (collision.gameObject.CompareTag("Trap"))
+            DieAndRestart();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
