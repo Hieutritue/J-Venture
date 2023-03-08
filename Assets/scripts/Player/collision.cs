@@ -42,8 +42,7 @@ public class collision : MonoBehaviour
             SavePlayerPref.Save(SceneManager.GetActiveScene().buildIndex);
         }
 
-        if (collision.gameObject.CompareTag("Trap"))
-            DieAndRestart();
+     
     }
 
     void OnCollisionEnter2D(Collision2D collision)
