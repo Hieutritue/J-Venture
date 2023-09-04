@@ -21,11 +21,13 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
-    ignoreMasterTextureLimit: 0
+    ignoreMipmapLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -88,7 +90,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
@@ -100,7 +101,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1457
+      x: 1383
       y: 2011
       width: 282
       height: 657
@@ -600,8 +601,7 @@ ScriptedImporter:
     - {x: 37, y: 38}
     - {x: 38, y: 39}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1457, y: 2011}
+    uvTransform: {x: 1383, y: 2011}
     spritePosition: {x: 809, y: 2276}
   - name: snakebody2
     originalName: 
@@ -610,7 +610,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1747
+      x: 1673
       y: 2011
       width: 257
       height: 539
@@ -1270,8 +1270,7 @@ ScriptedImporter:
     - {x: 47, y: 48}
     - {x: 48, y: 49}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1747, y: 2011}
+    uvTransform: {x: 1673, y: 2011}
     spritePosition: {x: 811, y: 2006}
   - name: snakebody1
     originalName: 
@@ -1784,7 +1783,6 @@ ScriptedImporter:
     - {x: 32, y: 33}
     - {x: 33, y: 34}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 2688}
     spritePosition: {x: 832, y: 1726}
   - name: snakeroot
@@ -2310,7 +2308,6 @@ ScriptedImporter:
     - {x: 33, y: 34}
     - {x: 34, y: 35}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 1858, y: 4}
     spritePosition: {x: 950, y: 1451}
   - name: innereye
@@ -2320,7 +2317,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1747
+      x: 1673
       y: 2558
       width: 99
       height: 87
@@ -2679,8 +2676,7 @@ ScriptedImporter:
     - {x: 25, y: 26}
     - {x: 26, y: 27}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1747, y: 2558}
+    uvTransform: {x: 1673, y: 2558}
     spritePosition: {x: 594, y: 1141}
   - name: eye1
     originalName: 
@@ -3169,9 +3165,8 @@ ScriptedImporter:
     - {x: 37, y: 38}
     - {x: 38, y: 39}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 2011}
-    spritePosition: {x: -74, y: 883}
+    spritePosition: {x: 0, y: 883}
   - name: innereye2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3179,7 +3174,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1854
+      x: 1780
       y: 2558
       width: 97
       height: 84
@@ -3517,8 +3512,7 @@ ScriptedImporter:
     - {x: 24, y: 25}
     - {x: 25, y: 26}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1854, y: 2558}
+    uvTransform: {x: 1780, y: 2558}
     spritePosition: {x: 1372, y: 1133}
   - name: eye2
     originalName: 
@@ -3527,7 +3521,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 985
+      x: 911
       y: 2011
       width: 464
       height: 458
@@ -3949,8 +3943,7 @@ ScriptedImporter:
     - {x: 29, y: 30}
     - {x: 30, y: 31}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 985, y: 2011}
+    uvTransform: {x: 911, y: 2011}
     spritePosition: {x: 1166, y: 956}
   - name: namdung
     originalName: 
@@ -4087,7 +4080,6 @@ ScriptedImporter:
     - {x: 0, y: 4}
     - {x: 1, y: 5}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 90, y: 8}
   characterData:
@@ -4266,6 +4258,7 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   sharedRigSpriteImportData: []
   sharedRigCharacterData:
@@ -4273,10 +4266,12 @@ ScriptedImporter:
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
+    ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -4288,6 +4283,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: Standalone
     overridden: 0
+    ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -4299,6 +4295,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: Server
     overridden: 0
+    ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -4318,6 +4315,8 @@ ScriptedImporter:
   paperDollMode: 0
   keepDupilcateSpriteName: 1
   skeletonAssetReferenceID: 
+  padding: 4
+  spriteSizeExpand: 0
   spriteCategoryList:
     categories: []
   spritePackingTag: 
@@ -4330,7 +4329,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 27cc21fb10fbbf6439536574da7913ab
     layerID: 9
-    mosaicPosition: {x: 1457, y: 2011}
+    mosaicPosition: {x: 1383, y: 2011}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -4340,7 +4339,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 31a2e11fe83c10a44aecd874aa02b1ac
     layerID: 5
-    mosaicPosition: {x: 1747, y: 2011}
+    mosaicPosition: {x: 1673, y: 2011}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -4370,7 +4369,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 6aff42e0a822ec7489df983b09ccaaea
     layerID: 20
-    mosaicPosition: {x: 1747, y: 2558}
+    mosaicPosition: {x: 1673, y: 2558}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -4390,7 +4389,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: c1fc3b59b725ff248ab44afcd94a2501
     layerID: 21
-    mosaicPosition: {x: 1854, y: 2558}
+    mosaicPosition: {x: 1780, y: 2558}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -4400,7 +4399,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 42bc7dd7976d21644970c12849596dfb
     layerID: 18
-    mosaicPosition: {x: 985, y: 2011}
+    mosaicPosition: {x: 911, y: 2011}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -4416,6 +4415,9 @@ ScriptedImporter:
     isVisible: 1
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: 
   prefabAssetName: 

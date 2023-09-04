@@ -18,7 +18,7 @@ public class trapngocmai : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isFalling && transform.position.y >=3.1)
+        if (isFalling && transform.position.y >=1.64)
         {
             transform.Translate(Vector2.down * Speed * Time.fixedDeltaTime);
         }
