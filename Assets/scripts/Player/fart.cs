@@ -14,6 +14,7 @@ public class fart : StateMachineBehaviour
         rb.velocity=new Vector2(0f,rb.velocity.y);
         playerMovement.enabled=false;
         fartSFX.Play();
+        
    }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
